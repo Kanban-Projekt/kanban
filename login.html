@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+button{
+    display: inline-block;
+}
+.container {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 50%;
+    margin-top: 50%;
+    padding: 100px;
+    color: green;
+}
+
+input[type=text], input[type=password] {
+  display: inline-block;
+  border-radius: 15px;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  border-radius: 15px;
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  border-radius: 15px;
+  background-color: green;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 3;
+}
+.loginbtn {
+  border-radius: 15px;
+  background-color: green;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  opacity: 0.9;
+}
+
+.loginbtn:hover {
+  opacity: 1;
+}
+#btnreg, #btnlog{ 
+}
+.btndiv{
+  display: inline-block;
+  position: absolute;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="container">
+    <form action="/action_page">
+        <h1>Logowanie</h1>
+       
+        <hr>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Wprowadz Email" name="email" id="email" required>
+     
+
+        <label for="psw"><b>Hasło</b></label>
+        <input type="password" placeholder="Wprowadz hasło" name="psw" id="psw" required>
+
+      <hr>
+        
+        <div class="btndiv">
+            <button type="submit" class="loginbtn" id="btnlog">Zaloguj</button>
+       
+            <a href=""><button type="text" class="registerbtn" id="btnreg">Zarejstruj</button></a>
+        </div>
+         
+
+    </form>
+</div>
+  
+
+</body>
+</html>
