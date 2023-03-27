@@ -1,0 +1,97 @@
+<script>
+export default {
+  name: 'LoginView'  
+}
+</script>
+
+<template>
+        
+<div class="container">
+    <form action="/action_page">
+        <h1>Logowanie</h1>
+       
+        <hr>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Wprowadz Email" name="email" id="email" required>
+     
+
+        <label for="psw"><b>Hasło</b></label>
+        <input type="password" placeholder="Wprowadz hasło" name="psw" id="psw" required>
+
+      <hr>
+        
+        <div class="btndiv">
+            <button type="submit" class="loginbtn" id="btnlog">Zaloguj</button>
+       
+            <a href=""><button type="text" class="registerbtn" id="btnreg">Zarejstruj</button></a>
+        </div>
+         
+
+    </form>
+</div>
+</template>
+
+<style>
+
+button{
+    display: inline-block;
+}
+
+input[type=text], input[type=password] {
+  display: inline-block;
+  border-radius: 15px;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  border-radius: 15px;
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  border-radius: 15px;
+  background-color: green;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 3;
+}
+.loginbtn {
+  border-radius: 15px;
+  background-color: green;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  opacity: 0.9;
+}
+
+.loginbtn:hover {
+  opacity: 1;
+}
+#btnreg, #btnlog{ 
+}
+.btndiv{
+  display: inline-block;
+  position: absolute;
+}
+
+</style>
